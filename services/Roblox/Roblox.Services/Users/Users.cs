@@ -1340,7 +1340,7 @@ public class UsersService : ServiceBase, IService
     private async Task BeforePurchase(long userIdBuyer, long assetId)
     {
         // the purpose of this function is so i can be a mini version of zlib.
-        const long ownerUserId = 12; // todo: get from appsettings
+        const long ownerUserId = 1; // todo: get from appsettings
         if (userIdBuyer == ownerUserId) return;
 #if RELEASE
         using var assetService = ServiceProvider.GetOrCreate<AssetsService>(this);
@@ -1545,7 +1545,7 @@ public class UsersService : ServiceBase, IService
     private async Task BeforeResalePurchase(long userIdBuyer, long userAssetId)
     {
         // the purpose of this function is so i can be a snipe botter without ddosing my own site >:D
-        const long ownerUserId = 12; // todo: get from appsettings
+        const long ownerUserId = 1; // todo: get from appsettings
         if (userIdBuyer == ownerUserId) return;
         var data = await GetUserAssetById(userAssetId);
         if (data.userId != ownerUserId && data.price <= 10)
