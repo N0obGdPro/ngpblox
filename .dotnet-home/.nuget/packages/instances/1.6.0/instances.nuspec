@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Instances</id>
+    <version>1.6.0</version>
+    <title>Instances</title>
+    <authors>Malte Rosenbjerg</authors>
+    <owners>Malte Rosenbjerg</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/rosenbjerg/Instances</projectUrl>
+    <description>A process wrapper for asyncronous use, using Tasks or Events</description>
+    <releaseNotes>CreateNoWindow is set to true by default</releaseNotes>
+    <copyright>Rosenbjerg Softworks</copyright>
+    <tags>instances instance process async task events</tags>
+    <repository url="https://github.com/rosenbjerg/Instances" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

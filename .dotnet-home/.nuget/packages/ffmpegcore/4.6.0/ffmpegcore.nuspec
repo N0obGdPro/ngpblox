@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>FFMpegCore</id>
+    <version>4.6.0</version>
+    <authors>Malte Rosenbjerg, Vlad Jerca, Max Bagryantsev</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/rosenbjerg/FFMpegCore</projectUrl>
+    <description>A .NET Standard FFMpeg/FFProbe wrapper for easily integrating media analysis and conversion into your .NET applications</description>
+    <releaseNotes>- Support for reading Disposition metadata on streams in FFProbe output (thanks alex6dj)
+- Fix for stream index in Snapshot(Async) (thanks stasokrosh)
+- Add support for frame analysis through FFProbe,GetFrames(Async) (thanks andyjmorgan)
+- Fix for subtitle burning error, when subtitle path contains special characters (thanks alex6dj)
+- Support for Audio filters (thanks alex6dj)
+- Fix FFProbe.AnalyseAsync not throwing if non-zero exit-code (thanks samburovkv)
+- Change bit_rate from int to long to support analysis of high bit-rate files (thanks zhuker) 
+- Support for specifying working directory for ffmpeg and ffprobe processes through FFOptions
+- Ensure Image instances in JoinImageSequence are disposed
+- Added ConfigureAwait(false) to prevent hanging with certain frameworks</releaseNotes>
+    <tags>ffmpeg ffprobe convert video audio mediafile resize analyze muxing</tags>
+    <readme>README.md</readme>
+    <repository type="GitHub" url="https://github.com/rosenbjerg/FFMpegCore" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Instances" version="1.6.0" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="5.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="5.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

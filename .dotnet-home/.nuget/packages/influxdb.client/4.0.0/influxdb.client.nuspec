@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>InfluxDB.Client</id>
+    <version>4.0.0</version>
+    <authors>influxdb-client-csharp Contributors</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>influxdata.jpg</icon>
+    <projectUrl>https://github.com/influxdata/influxdb-client-csharp/tree/master/Client</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/influxdata/influxdb-client-csharp/master/Assets/influxdata.jpg</iconUrl>
+    <description>The reference client that allows query, write and management (bucket, organization, users) for the InfluxDB 2.0.</description>
+    <releaseNotes>https://github.com/influxdata/influxdb-client-csharp/blob/master/CHANGELOG.md</releaseNotes>
+    <tags>influxdata timeseries flux influxdb</tags>
+    <repository type="git" url="https://github.com/influxdata/influxdb-client-csharp" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="InfluxDB.Client.Core" version="4.0.0" exclude="Build,Analyzers" />
+        <dependency id="JsonSubTypes" version="1.8.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.ObjectPool" version="6.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Net.Http.Headers" version="2.2.8" exclude="Build,Analyzers" />
+        <dependency id="System.Collections.Immutable" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Configuration.ConfigurationManager" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reactive" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="InfluxDB.Client.Core" version="4.0.0" exclude="Build,Analyzers" />
+        <dependency id="JsonSubTypes" version="1.8.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.ObjectPool" version="6.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Net.Http.Headers" version="2.2.8" exclude="Build,Analyzers" />
+        <dependency id="System.Collections.Immutable" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Configuration.ConfigurationManager" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reactive" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

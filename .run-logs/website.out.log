@@ -1,0 +1,1226 @@
+[info] owner = 1
+[info] ws connection is in state None, so we are re-connecting
+[info] add to bypass /game/visit.ashx
+[info] add to bypass /internal/release-metadata
+[info] add to bypass /internal/release-metadata
+[info] add to bypass /asset/shader
+[info] add to bypass /asset/shader
+[info] add to bypass /asset
+[info] add to bypass /asset
+[info] add to bypass /game/gamepass/gamepasshandler.ashx
+[info] add to bypass /game/gamepass/gamepasshandler.ashx
+[info] add to bypass /game/luawebservice/handlesocialrequest.ashx
+[info] add to bypass /game/luawebservice/handlesocialrequest.ashx
+[info] add to bypass /login/negotiate.ashx
+[info] add to bypass /login/negotiateasync.ashx
+[info] add to bypass /login/negotiate.ashx
+[info] add to bypass /login/negotiateasync.ashx
+[info] add to bypass /auth/submit
+[info] add to bypass /placelauncher.ashx
+[info] add to bypass /placelauncher.ashx
+[info] add to bypass /game/join.ashx
+[info] add to bypass /game/join.ashx
+[info] add to bypass /asset/characterfetch.ashx
+[info] add to bypass /asset/characterfetch.ashx
+[info] add to bypass /users/liststaff.ashx
+[info] add to bypass /users/liststaff.ashx
+[info] add to bypass /users/getbanstatus.ashx
+[info] add to bypass /users/getbanstatus.ashx
+[info] add to bypass /asset/bodycolors.ashx
+[info] add to bypass /asset/bodycolors.ashx
+[info] add to bypass /botapi/migrate-alltypes
+[info] add to bypass /botapi/migrate-alltypes
+[info] add to bypass /botapi/migrate-clothing
+[info] add to bypass /botapi/migrate-clothing
+[info] add to bypass /apisite/clientsettings/setting/quietget/clientappsettings
+[info] add to bypass /apisite/clientsettings/setting/quietget/rccappsettings
+[info] add to bypass /apisite/clientsettings/setting/quietget/firefoxappsettings
+[info] add to bypass /apisite/clientsettings/setting/quietget/chromeappsettings
+[info] add to bypass /apisite/clientsettings/setting/quietget/clientappsettings
+[info] add to bypass /apisite/clientsettings/setting/quietget/rccappsettings
+[info] add to bypass /apisite/clientsettings/setting/quietget/firefoxappsettings
+[info] add to bypass /apisite/clientsettings/setting/quietget/chromeappsettings
+[info] add to bypass /buildersclub/upgrade.ashx
+[info] add to bypass /buildersclub/upgrade.ashx
+[info] add to bypass /abusereport/userprofile
+[info] add to bypass /abusereport/asset
+[info] add to bypass /abusereport/user
+[info] add to bypass /abusereport/users
+[info] add to bypass /abusereport/userprofile
+[info] add to bypass /abusereport/asset
+[info] add to bypass /abusereport/user
+[info] add to bypass /abusereport/users
+[info] add to bypass /info/blog
+[info] add to bypass /my/economy-status
+[info] add to bypass /currency/balance
+[info] add to bypass /ownership/hasasset
+[info] add to bypass /persistence/increment
+[info] add to bypass /persistence/increment
+[info] add to bypass /persistence/getsortedvalues
+[info] add to bypass /persistence/getsortedvalues
+[info] add to bypass /persistence/getv2
+[info] add to bypass /persistence/getv2
+[info] add to bypass /persistence/set
+[info] add to bypass /persistence/set
+[info] add to bypass /integration-test/create-account-and-set-cookie
+[info] add to bypass /integration-test/create-account-and-set-cookie
+fail: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor[43]
+      An exception occurred while trying to decrypt the element.
+      System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+         at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+         at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+         at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+fail: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[24]
+      An exception occurred while processing the key element '<key id="f0dc09a7-74fd-49bf-ac17-85142803a560" version="1" />'.
+      System.AggregateException: An error occurred while writing to logger(s). (Cannot open log for source '.NET Runtime'. You may not have write access.)
+       ---> System.InvalidOperationException: Cannot open log for source '.NET Runtime'. You may not have write access.
+       ---> System.ComponentModel.Win32Exception (5): AccŠs refus‚.
+         --- End of inner exception stack trace ---
+         at System.Diagnostics.EventLogInternal.OpenForWrite(String currentMachineName)
+         at System.Diagnostics.EventLogInternal.InternalWriteEvent(UInt32 eventID, UInt16 category, EventLogEntryType type, String[] strings, Byte[] rawData, String currentMachineName)
+         at System.Diagnostics.EventLogInternal.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+         at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+         at Microsoft.Extensions.Logging.EventLog.WindowsEventLog.WriteEntry(String message, EventLogEntryType type, Int32 eventID, Int16 category)
+         at Microsoft.Extensions.Logging.EventLog.EventLogLogger.WriteMessage(String message, EventLogEntryType eventLogEntryType, Int32 eventId)
+         at Microsoft.Extensions.Logging.EventLog.EventLogLogger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+         at Microsoft.Extensions.Logging.Logger.<Log>g__LoggerLog|12_0[TState](LogLevel logLevel, EventId eventId, ILogger logger, Exception exception, Func`3 formatter, List`1& exceptions, TState& state)
+         --- End of inner exception stack trace ---
+         at Microsoft.Extensions.Logging.Logger.ThrowLoggingError(List`1 exceptions)
+         at Microsoft.Extensions.Logging.Logger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+         at Microsoft.Extensions.Logging.LoggerMessage.<>c__DisplayClass8_0.<Define>g__Log|0(ILogger logger, Exception exception)
+         at Microsoft.Extensions.Logging.LoggingExtensions.ExceptionOccurredTryingToDecryptElement(ILogger logger, Exception exception)
+         at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+         at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+warn: Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver[12]
+      Key {f0dc09a7-74fd-49bf-ac17-85142803a560} is ineligible to be the default key because its CreateEncryptor method failed.
+      System.AggregateException: An error occurred while writing to logger(s). (Cannot open log for source '.NET Runtime'. You may not have write access.)
+       ---> System.InvalidOperationException: Cannot open log for source '.NET Runtime'. You may not have write access.
+       ---> System.ComponentModel.Win32Exception (5): AccŠs refus‚.
+         --- End of inner exception stack trace ---
+         at System.Diagnostics.EventLogInternal.OpenForWrite(String currentMachineName)
+         at System.Diagnostics.EventLogInternal.InternalWriteEvent(UInt32 eventID, UInt16 category, EventLogEntryType type, String[] strings, Byte[] rawData, String currentMachineName)
+         at System.Diagnostics.EventLogInternal.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+         at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+         at Microsoft.Extensions.Logging.EventLog.WindowsEventLog.WriteEntry(String message, EventLogEntryType type, Int32 eventID, Int16 category)
+         at Microsoft.Extensions.Logging.EventLog.EventLogLogger.WriteMessage(String message, EventLogEntryType eventLogEntryType, Int32 eventId)
+         at Microsoft.Extensions.Logging.EventLog.EventLogLogger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+         at Microsoft.Extensions.Logging.Logger.<Log>g__LoggerLog|12_0[TState](LogLevel logLevel, EventId eventId, ILogger logger, Exception exception, Func`3 formatter, List`1& exceptions, TState& state)
+         --- End of inner exception stack trace ---
+         at Microsoft.Extensions.Logging.Logger.ThrowLoggingError(List`1 exceptions)
+         at Microsoft.Extensions.Logging.Logger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+         at Microsoft.Extensions.Logging.Logger`1.Microsoft.Extensions.Logging.ILogger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+         at Microsoft.Extensions.Logging.LoggerMessage.<>c__DisplayClass10_0`1.<Define>g__Log|0(ILogger logger, T1 arg1, Exception exception)
+         at Microsoft.Extensions.Logging.LoggingExtensions.ExceptionWhileProcessingKeyElement(ILogger logger, XElement element, Exception exception)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.WriteKeyDeserializationErrorToLog(Exception error, XElement keyElement)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.DeferredKey.<>c__DisplayClass1_0.<GetLazyDescriptorDelegate>b__0()
+         at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+         at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+         at System.Lazy`1.CreateValue()
+         at System.Lazy`1.get_Value()
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.get_Descriptor()
+         at Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory.CreateEncryptorInstance(IKey key)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyBase.CreateEncryptor()
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.CanCreateAuthenticatedEncryptor(IKey key)
+fail: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider[48]
+      An error occurred while reading the key ring.
+      System.AggregateException: An error occurred while writing to logger(s). (Cannot open log for source '.NET Runtime'. You may not have write access.)
+       ---> System.InvalidOperationException: Cannot open log for source '.NET Runtime'. You may not have write access.
+       ---> System.ComponentModel.Win32Exception (5): AccŠs refus‚.
+         --- End of inner exception stack trace ---
+         at System.Diagnostics.EventLogInternal.OpenForWrite(String currentMachineName)
+         at System.Diagnostics.EventLogInternal.InternalWriteEvent(UInt32 eventID, UInt16 category, EventLogEntryType type, String[] strings, Byte[] rawData, String currentMachineName)
+         at System.Diagnostics.EventLogInternal.WriteEvent(EventInstance instance, Byte[] data, Object[] values)
+         at System.Diagnostics.EventLog.WriteEvent(EventInstance instance, Object[] values)
+         at Microsoft.Extensions.Logging.EventLog.WindowsEventLog.WriteEntry(String message, EventLogEntryType type, Int32 eventID, Int16 category)
+         at Microsoft.Extensions.Logging.EventLog.EventLogLogger.WriteMessage(String message, EventLogEntryType eventLogEntryType, Int32 eventId)
+         at Microsoft.Extensions.Logging.EventLog.EventLogLogger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+         at Microsoft.Extensions.Logging.Logger.<Log>g__LoggerLog|12_0[TState](LogLevel logLevel, EventId eventId, ILogger logger, Exception exception, Func`3 formatter, List`1& exceptions, TState& state)
+         --- End of inner exception stack trace ---
+         at Microsoft.Extensions.Logging.Logger.ThrowLoggingError(List`1 exceptions)
+         at Microsoft.Extensions.Logging.Logger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+         at Microsoft.Extensions.Logging.Logger`1.Microsoft.Extensions.Logging.ILogger.Log[TState](LogLevel logLevel, EventId eventId, TState state, Exception exception, Func`3 formatter)
+         at Microsoft.Extensions.Logging.LoggerMessage.<>c__DisplayClass12_0`2.<Define>g__Log|0(ILogger logger, T1 arg1, T2 arg2, Exception exception)
+         at Microsoft.Extensions.Logging.LoggingExtensions.KeyIsIneligibleToBeTheDefaultKeyBecauseItsMethodFailed(ILogger logger, Guid keyId, String methodName, Exception exception)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.CanCreateAuthenticatedEncryptor(IKey key)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.FindDefaultKey(DateTimeOffset now, IEnumerable`1 allKeys, IKey& fallbackKey, Boolean& callerShouldGenerateNewKey)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.ResolveDefaultKeyPolicy(DateTimeOffset now, IEnumerable`1 allKeys)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider.CreateCacheableKeyRingCore(DateTimeOffset now, IKey keyJustAdded)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.ICacheableKeyRingProvider.GetCacheableKeyRing(DateTimeOffset now)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider.GetCurrentKeyRingCore(DateTime utcNow, Boolean forceRefresh)
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/download
+[FixAssetImageMetadata] 2026-08-20T19:05:03.4478966Z fixing thumbnails
+[FixAssetImageMetadata] 2026-08-20T19:05:03.4757527Z took 26ms to get all asset versions to fix. length is 0
+[FixAssetImageMetadata] 2026-08-20T19:05:03.4760252Z done fixing images
+[UserSessions] 2026-08-20T19:05:03.4812723Z Starting clear cache timer
+[UserSessions] 2026-08-20T19:05:03.4972548Z Starting clear cache timer
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 34ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:05:31.7012042Z Cleaning up cache. len = 1
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[UserSessions] 2026-08-20T19:06:01.7103797Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:06:01.7105112Z Cleaning up cache. len = 1
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 1ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:06:31.7249882Z Cleaning up cache. len = 1
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[UserSessions] 2026-08-20T19:07:01.7178382Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:07:01.7339996Z Cleaning up cache. len = 1
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/download
+[PROXY] http://localhost:3185/_next/static/chunks/webpack.js?ts=1787252838344
+[PROXY] http://localhost:3185/_next/static/chunks/react-refresh.js?ts=1787252838344
+[PROXY] http://localhost:3185/_next/static/chunks/main.js?ts=1787252838344
+[PROXY] http://localhost:3185/_next/static/chunks/pages/_app.js?ts=1787252838344
+[PROXY] http://localhost:3185/_next/static/chunks/pages/download.js?ts=1787252838344
+[PROXY] http://localhost:3185/_next/static/development/_buildManifest.js?ts=1787252838344
+[PROXY] http://localhost:3185/_next/static/development/_ssgManifest.js?ts=1787252838344
+[PROXY] http://localhost:3185/_next/static/development/_middlewareManifest.js?ts=1787252838344
+[PROXY] http://localhost:3185/img/roblox_logo.svg
+[PROXY] http://localhost:3185/img/navigation_02012016.svg
+[GET] http://localhost:5000/apisite/api/alerts/alert-info - 7ms
+[GET] http://localhost:5000/apisite/chat/v2/chat-settings - 2ms
+[PROXY] http://localhost:3185/_next/static/development/_devPagesManifest.json
+[GET] http://localhost:5000/apisite/users/v1/users/authenticated - 3ms
+[PROXY] http://localhost:3185/favicon.ico
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends - 12ms
+[GET] http://localhost:5000/apisite/trades/v1/trades/inbound/count - 7ms
+[GET] http://localhost:5000/apisite/friends/v1/user/friend-requests/count - 5ms
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[GET] http://localhost:5000/apisite/privatemessages/v1/messages/unread/count - 32ms
+[GET] http://localhost:5000/apisite/economy/v1/users/1/currency - 5ms
+[PROXY] http://localhost:3185/_next/static/development/_devMiddlewareManifest.json
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 3ms
+[PROXY] http://localhost:3185/_next/static/chunks/pages/develop.js
+[GET] http://localhost:5000/user-sponsorship/1 - 23ms
+[GET] http://localhost:5000/apisite/games/v2/users/1/games?cursor= - 12ms
+[GET] http://localhost:5000/apisite/groups/v1/users/1/groups/roles - 21ms
+[GET] http://localhost:5000/apisite/groups/v1/groups/1/roles/4/permissions - 13ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/static/chunks/pages/admin.js
+[GET] http://localhost:5000/admin - 5ms
+[GET] http://localhost:5000/admin/build-redirect/bundle.css - 1ms
+[GET] http://localhost:5000/admin/build-redirect/bundle.js - 0ms
+[GET] http://localhost:5000/admin/build/31646d28-b1f0-428e-9946-12a866a5ad6f/bundle.js - 9ms
+[GET] http://localhost:5000/admin/build/31646d28-b1f0-428e-9946-12a866a5ad6f/bundle.css - 5ms
+[GET] http://localhost:5000/admin/favicon.png - 2ms
+[GET] http://localhost:5000/admin-api/api/permissions - 17ms
+[GET] http://localhost:5000/admin-api/api/assets/pending-assets - 37ms
+[GET] http://localhost:5000/admin-api/api/alert - 3ms
+[GET] http://localhost:5000/admin-api/api/groups/pending-icons - 8ms
+[GET] http://localhost:5000/admin-api/api/players/online-count - 6ms
+[GET] http://localhost:5000/admin-api/api/players/in-game - 4ms
+[GET] http://localhost:5000/admin-api/api/user-joins?period=past-day - 7ms
+[GET] http://localhost:5000/admin-api/api/icons/pending-assets - 8ms
+[GET] http://localhost:5000/admin-api/api/user-joins?period=past-hour - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[UserSessions] 2026-08-20T19:07:31.7486190Z Cleaning up cache. len = 1
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/admin-api/api/icons/pending-assets - 2ms
+[GET] http://localhost:5000/admin-api/api/groups/pending-icons - 2ms
+[GET] http://localhost:5000/admin/favicon.png - 0ms
+[GET] http://localhost:5000/admin-api/api/assets/pending-assets - 5ms
+[GET] http://localhost:5000/admin/favicon.png - 0ms
+[GET] http://localhost:5000/admin-api/api/groups/pending-icons - 0ms
+[GET] http://localhost:5000/admin-api/api/user-joins?period=past-day - 0ms
+[GET] http://localhost:5000/admin-api/api/players/in-game - 8ms
+[GET] http://localhost:5000/admin-api/api/alert - 0ms
+[GET] http://localhost:5000/admin-api/api/user-joins?period=past-hour - 0ms
+[GET] http://localhost:5000/admin-api/api/players/online-count - 0ms
+[GET] http://localhost:5000/admin-api/api/assets/pending-assets - 5ms
+[GET] http://localhost:5000/admin-api/api/icons/pending-assets - 1ms
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 4ms
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/static/chunks/pages/games.js
+[PROXY] http://localhost:3185/_next/data/development/games.json
+[GET] http://localhost:5000/user-sponsorship/1 - 4ms
+[GET] http://localhost:5000/apisite/games/v1/games/sorts?gameSortsContext=GamesDefaultSorts - 13ms
+[GET] http://localhost:5000/apisite/games/v1/games/list?sortToken=mostFavorited&maxRows=100&genre=0&keyword= - 24ms
+[GET] http://localhost:5000/apisite/games/v1/games/list?sortToken=recentlyUpdated&maxRows=100&genre=0&keyword= - 6ms
+[GET] http://localhost:5000/apisite/games/v1/games/list?sortToken=popular&maxRows=100&genre=0&keyword= - 8ms
+[GET] http://localhost:5000/user-sponsorship/3 - 4ms
+[GET] http://localhost:5000/user-sponsorship/3 - 2ms
+[GET] http://localhost:5000/user-sponsorship/3 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 2ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 2ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[UserSessions] 2026-08-20T19:08:01.7424355Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:08:01.7576071Z Cleaning up cache. len = 1
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 2ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[UserSessions] 2026-08-20T19:08:31.7727702Z Cleaning up cache. len = 1
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[UserSessions] 2026-08-20T19:09:01.7526573Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:09:01.7836138Z Cleaning up cache. len = 1
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[UserSessions] 2026-08-20T19:09:31.7956776Z Cleaning up cache. len = 1
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/download
+[PROXY] http://localhost:3185/_next/static/chunks/webpack.js?ts=1787252994801
+[PROXY] http://localhost:3185/_next/static/chunks/react-refresh.js?ts=1787252994801
+[PROXY] http://localhost:3185/_next/static/chunks/main.js?ts=1787252994801
+[PROXY] http://localhost:3185/_next/static/chunks/pages/_app.js?ts=1787252994801
+[PROXY] http://localhost:3185/_next/static/chunks/pages/download.js?ts=1787252994801
+[PROXY] http://localhost:3185/_next/static/development/_buildManifest.js?ts=1787252994801
+[PROXY] http://localhost:3185/_next/static/development/_ssgManifest.js?ts=1787252994801
+[PROXY] http://localhost:3185/_next/static/development/_middlewareManifest.js?ts=1787252994801
+[PROXY] http://localhost:3185/img/navigation_02012016.svg
+[GET] http://localhost:5000/apisite/api/alerts/alert-info - 0ms
+[GET] http://localhost:5000/apisite/chat/v2/chat-settings - 0ms
+[GET] http://localhost:5000/apisite/users/v1/users/authenticated - 0ms
+[PROXY] http://localhost:3185/_next/static/development/_devPagesManifest.json
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends - 3ms
+[GET] http://localhost:5000/apisite/economy/v1/users/1/currency - 2ms
+[GET] http://localhost:5000/apisite/trades/v1/trades/inbound/count - 2ms
+[GET] http://localhost:5000/apisite/privatemessages/v1/messages/unread/count - 2ms
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[GET] http://localhost:5000/apisite/friends/v1/user/friend-requests/count - 2ms
+[PROXY] http://localhost:3185/img/roblox_logo.svg
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[PROXY] http://localhost:3185/favicon.ico
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[UserSessions] 2026-08-20T19:10:01.7663127Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:10:01.7970897Z Cleaning up cache. len = 1
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[UserSessions] 2026-08-20T19:10:31.8052223Z Cleaning up cache. len = 1
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[UserSessions] 2026-08-20T19:11:01.7790571Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:11:01.8096985Z Cleaning up cache. len = 1
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:11:31.8326233Z Cleaning up cache. len = 1
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:12:01.7918538Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:12:01.8391215Z Cleaning up cache. len = 1
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[UserSessions] 2026-08-20T19:12:31.8487551Z Cleaning up cache. len = 1
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:13:01.8028604Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:13:01.8647090Z Cleaning up cache. len = 1
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:13:31.8696114Z Cleaning up cache. len = 1
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[UserSessions] 2026-08-20T19:14:01.8143888Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:14:01.8781633Z Cleaning up cache. len = 1
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/download
+[PROXY] http://localhost:3185/_next/static/chunks/webpack.js?ts=1787253251632
+[PROXY] http://localhost:3185/_next/static/chunks/react-refresh.js?ts=1787253251632
+[PROXY] http://localhost:3185/_next/static/chunks/main.js?ts=1787253251632
+[PROXY] http://localhost:3185/_next/static/chunks/pages/_app.js?ts=1787253251632
+[PROXY] http://localhost:3185/_next/static/chunks/pages/download.js?ts=1787253251632
+[PROXY] http://localhost:3185/_next/static/development/_buildManifest.js?ts=1787253251632
+[PROXY] http://localhost:3185/_next/static/development/_middlewareManifest.js?ts=1787253251632
+[PROXY] http://localhost:3185/img/roblox_logo.svg
+[PROXY] http://localhost:3185/img/navigation_02012016.svg
+[GET] http://localhost:5000/apisite/api/alerts/alert-info - 0ms
+[GET] http://localhost:5000/apisite/chat/v2/chat-settings - 0ms
+[GET] http://localhost:5000/apisite/users/v1/users/authenticated - 0ms
+[PROXY] http://localhost:3185/_next/static/development/_devPagesManifest.json
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends - 3ms
+[GET] http://localhost:5000/apisite/trades/v1/trades/inbound/count - 2ms
+[GET] http://localhost:5000/apisite/privatemessages/v1/messages/unread/count - 2ms
+[GET] http://localhost:5000/apisite/friends/v1/user/friend-requests/count - 2ms
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/economy/v1/users/1/currency - 1ms
+[PROXY] http://localhost:3185/_next/static/development/_ssgManifest.js?ts=1787253251632
+[PROXY] http://localhost:3185/favicon.ico
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:14:31.8960196Z Cleaning up cache. len = 1
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 2ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[PROXY] http://localhost:3185/_next/static/development/_devMiddlewareManifest.json
+[PROXY] http://localhost:3185/_next/static/chunks/pages/users/%5BuserId%5D/profile.js
+[GET] http://localhost:5000/apisite/users/v1/users/1/username-history?limit=100&cursor= - 10ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends/statuses?userIds=1 - 26ms
+[info] CSRF fail for http://localhost:5000/apisite/friends/v1/user/following-exists (P=/apisite/friends/v1/user/following-exists)
+[GET] http://localhost:5000/apisite/groups/v1/users/1/groups/roles - 10ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/followers/count - 4ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends - 5ms
+[GET] http://localhost:5000/apisite/users/v1/users/1 - 3ms
+[POST] http://localhost:5000/apisite/friends/v1/user/following-exists - 14ms
+[PROXY] http://localhost:3185/img/generic_03112016.svg
+[GET] http://localhost:5000/apisite/premiumfeatures/v1/users/1/validate-membership - 3ms
+[GET] http://localhost:5000/user-sponsorship/1 - 7ms
+[GET] http://localhost:5000/apisite/games/v2/users/1/games?cursor= - 5ms
+[info] there are 0 bad servers
+[GET] http://localhost:5000/apisite/thumbnails/v1/groups/icons?groupIds=1&format=png&size=420x420 - 11ms
+[GET] http://localhost:5000/users/favorites/list-json?userId=1&assetTypeId=9&pageNumber=1&itemsPerPage=6 - 14ms
+[PerformanceDebugging] 2026-08-20T19:15:01.1153495Z it took 7ms to run MultiGetCatalog query
+[GET] http://localhost:5000/apisite/accountinformation/v1/users/1/roblox-badges - 8ms
+[GET] http://localhost:5000/users/profile/robloxcollections-json?userId=1 - 52ms
+[GET] http://localhost:5000/apisite/premiumfeatures/v1/users/1/validate-membership - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 7ms
+[PROXY] http://localhost:3185/img/bc.svg
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar-headshot?userIds=1&size=420x420&format=png - 5ms
+[PROXY] http://localhost:3185/img/roblox_badges.svg
+[GET] http://localhost:5000/thumbs/asset.ashx?assetId=1&width=420&height=420&format=png - 8ms
+[POST] http://localhost:5000/apisite/presence/v1/presence/users - 14ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/followings/count - 5ms
+[PROXY] http://localhost:3185/img/FriendsStatus.svg
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 2ms
+[GET] http://localhost:5000/apisite/avatar/v1/users/1/avatar - 17ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1&size=420x420&format=png - 0ms
+[POST] http://localhost:5000/apisite/presence/v1/presence/users - 3ms
+[UserSessions] 2026-08-20T19:15:01.8180859Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:15:01.9110195Z Cleaning up cache. len = 1
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 2ms
+[GET] http://localhost:5000/apisite/avatar/v1/users/1/avatar - 1ms
+[GET] http://localhost:5000/apisite/accountinformation/v1/users/1/roblox-badges - 1ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/groups/icons?groupIds=1&format=png&size=420x420 - 1ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 1ms
+[GET] http://localhost:5000/users/favorites/list-json?userId=1&assetTypeId=9&pageNumber=1&itemsPerPage=6 - 3ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 0ms
+[PerformanceDebugging] 2026-08-20T19:15:03.1699430Z it took 2ms to run MultiGetCatalog query
+[GET] http://localhost:5000/users/profile/robloxcollections-json?userId=1 - 4ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/static/chunks/pages/catalog.js
+[PROXY] http://localhost:3185/img/limitedOverlay_small.png
+[GET] http://localhost:5000/user-sponsorship/1 - 2ms
+[PROXY] http://localhost:3185/img/limitedUOverlay_small.png
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/catalog/v1/search/items?category=Featured&limit=28&sortType=0 - 14ms
+[PerformanceDebugging] 2026-08-20T19:15:05.2159656Z it took 2ms to run MultiGetCatalog query
+[POST] http://localhost:5000/apisite/catalog/v1/catalog/items/details - 28ms
+[PROXY] http://localhost:3185/img/img-robux.png
+[PROXY] http://localhost:3185/img/CatalogOverlays/New.png
+[PROXY] http://localhost:3185/_next/static/chunks/pages/develop.js
+[GET] http://localhost:5000/apisite/thumbnails/v1/assets?assetIds=1&format=png&size=420x420 - 4ms
+[PROXY] http://localhost:3185/img/overlay_bcCatalog.png
+[GET] http://localhost:5000/apisite/groups/v1/users/1/groups/roles - 9ms
+[GET] http://localhost:5000/apisite/groups/v1/groups/1/roles/4/permissions - 3ms
+[GET] http://localhost:5000/user-sponsorship/1 - 2ms
+[GET] http://localhost:5000/apisite/games/v2/users/1/games?cursor= - 1ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fcomponents%2Fdevelop%2Fcomponents%2FcreationsTab.js&methodName=CreationsTab&arguments=&lineNumber=89&column=36
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=updateFunctionComponent&arguments=&lineNumber=17356&column=20
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=Object.invokeGuardedCallbackDev&arguments=&lineNumber=3994&column=16
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=invokeGuardedCallback&arguments=&lineNumber=4056&column=31
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=beginWork%241&arguments=&lineNumber=23959&column=7
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=performUnitOfWork&arguments=&lineNumber=22771&column=12
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=workLoopSync&arguments=&lineNumber=22702&column=5
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=renderRootSync&arguments=&lineNumber=22665&column=7
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=performSyncWorkOnRoot&arguments=&lineNumber=22288&column=18
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=runWithPriority%241&arguments=&lineNumber=11276&column=10
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=eval&arguments=&lineNumber=11327&column=26
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Fscheduler%2Fcjs%2Fscheduler.development.js&methodName=unstable_runWithPriority&arguments=&lineNumber=468&column=12
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=flushSyncCallbackQueueImpl&arguments=&lineNumber=11322&column=9
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=flushSyncCallbackQueue&arguments=&lineNumber=11309&column=3
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=flushPassiveEffectsImpl&arguments=&lineNumber=23615&column=3
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=flushPassiveEffects&arguments=&lineNumber=23442&column=14
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=eval&arguments=&lineNumber=23319&column=11
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Fscheduler%2Fcjs%2Fscheduler.development.js&methodName=workLoop&arguments=&lineNumber=417&column=34
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Fscheduler%2Fcjs%2Fscheduler.development.js&methodName=flushWork&arguments=&lineNumber=390&column=14
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Fscheduler%2Fcjs%2Fscheduler.development.js&methodName=MessagePort.performWorkUntilDeadline&arguments=&lineNumber=157&column=27
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=runWithPriority%241&arguments=&lineNumber=11276&column=10
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=HTMLUnknownElement.callCallback&arguments=&lineNumber=3945&column=14
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Fscheduler%2Fcjs%2Fscheduler.development.js&methodName=unstable_runWithPriority&arguments=&lineNumber=468&column=12
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=renderWithHooks&arguments=&lineNumber=14985&column=18
+[PROXY] http://localhost:3185/__nextjs_original-stack-frame?isServerSide=false&file=webpack-internal%3A%2F%2F%2F.%2Fnode_modules%2Freact-dom%2Fcjs%2Freact-dom.development.js&methodName=beginWork&arguments=&lineNumber=19063&column=16
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/assets?assetIds=1&format=png&size=420x420 - 0ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/assets?assetIds=1&format=png&size=420x420 - 1ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/assets?assetIds=1&format=png&size=420x420 - 1ms
+[PROXY] http://localhost:3185/catalog
+[PROXY] http://localhost:3185/_next/static/chunks/webpack.js?ts=1787253311650
+[PROXY] http://localhost:3185/_next/static/chunks/main.js?ts=1787253311650
+[PROXY] http://localhost:3185/img/limitedOverlay_small.png
+[PROXY] http://localhost:3185/img/limitedUOverlay_small.png
+[PROXY] http://localhost:3185/_next/static/chunks/pages/_app.js?ts=1787253311650
+[PROXY] http://localhost:3185/_next/static/development/_buildManifest.js?ts=1787253311650
+[PROXY] http://localhost:3185/_next/static/development/_ssgManifest.js?ts=1787253311650
+[PROXY] http://localhost:3185/_next/static/development/_middlewareManifest.js?ts=1787253311650
+[PROXY] http://localhost:3185/img/overlay_bcCatalog.png
+[PROXY] http://localhost:3185/_next/static/chunks/react-refresh.js?ts=1787253311650
+[PROXY] http://localhost:3185/_next/static/chunks/pages/catalog.js?ts=1787253311650
+[PROXY] http://localhost:3185/img/roblox_logo.svg
+[PROXY] http://localhost:3185/favicon.ico
+[GET] http://localhost:5000/apisite/api/alerts/alert-info - 0ms
+[GET] http://localhost:5000/apisite/users/v1/users/authenticated - 0ms
+[GET] http://localhost:5000/apisite/catalog/v1/search/items?category=Featured&limit=28&sortType=0 - 1ms
+[GET] http://localhost:5000/user-sponsorship/1 - 3ms
+[PROXY] http://localhost:3185/_next/static/development/_devPagesManifest.json
+[GET] http://localhost:5000/apisite/economy/v1/users/1/currency - 2ms
+[GET] http://localhost:5000/apisite/trades/v1/trades/inbound/count - 2ms
+[GET] http://localhost:5000/apisite/friends/v1/user/friend-requests/count - 0ms
+[info] CSRF fail for http://localhost:5000/apisite/catalog/v1/catalog/items/details (P=/apisite/catalog/v1/catalog/items/details)
+[PerformanceDebugging] 2026-08-20T19:15:12.2304919Z it took 0ms to run MultiGetCatalog query
+[POST] http://localhost:5000/apisite/catalog/v1/catalog/items/details - 1ms
+[PROXY] http://localhost:3185/img/img-robux.png
+[PROXY] http://localhost:3185/img/CatalogOverlays/New.png
+[GET] http://localhost:5000/apisite/thumbnails/v1/assets?assetIds=1&format=png&size=420x420 - 0ms
+[GET] http://localhost:5000/apisite/chat/v2/chat-settings - 0ms
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 2ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends - 0ms
+[PROXY] http://localhost:3185/img/navigation_02012016.svg
+[GET] http://localhost:5000/apisite/privatemessages/v1/messages/unread/count - 2ms
+[info] ws connection is in state Closed, so we are re-connecting
+[PROXY] http://localhost:3185/_next/static/development/_devMiddlewareManifest.json
+[PROXY] http://localhost:3185/_next/static/chunks/pages/users/%5BuserId%5D/profile.js
+[GET] http://localhost:5000/apisite/users/v1/users/1 - 0ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends/statuses?userIds=1 - 4ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/followings/count - 3ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends - 3ms
+[GET] http://localhost:5000/apisite/games/v2/users/1/games?cursor= - 1ms
+[GET] http://localhost:5000/apisite/groups/v1/users/1/groups/roles - 1ms
+[PROXY] http://localhost:3185/img/generic_03112016.svg
+[GET] http://localhost:5000/user-sponsorship/1 - 0ms
+[GET] http://localhost:5000/apisite/premiumfeatures/v1/users/1/validate-membership - 0ms
+[POST] http://localhost:5000/apisite/presence/v1/presence/users - 3ms
+[PerformanceDebugging] 2026-08-20T19:15:13.7987120Z it took 0ms to run MultiGetCatalog query
+[GET] http://localhost:5000/users/favorites/list-json?userId=1&assetTypeId=9&pageNumber=1&itemsPerPage=6 - 0ms
+[GET] http://localhost:5000/apisite/avatar/v1/users/1/avatar - 7ms
+[GET] http://localhost:5000/users/profile/robloxcollections-json?userId=1 - 5ms
+[GET] http://localhost:5000/apisite/accountinformation/v1/users/1/roblox-badges - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/groups/icons?groupIds=1&format=png&size=420x420 - 2ms
+[PROXY] http://localhost:3185/img/FriendsStatus.svg
+[PROXY] http://localhost:3185/img/bc.svg
+[GET] http://localhost:5000/thumbs/asset.ashx?assetId=1&width=420&height=420&format=png - 1ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar-headshot?userIds=1&size=420x420&format=png - 0ms
+[PROXY] http://localhost:3185/img/roblox_badges.svg
+[GET] http://localhost:5000/apisite/friends/v1/users/1/followers/count - 0ms
+[PROXY] http://localhost:3185/_next/webpack-hmr
+[GET] http://localhost:5000/apisite/users/v1/users/1/username-history?limit=100&cursor= - 2ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/assets?assetIds=1&format=png&size=420x420 - 0ms
+[POST] http://localhost:5000/apisite/friends/v1/user/following-exists - 0ms
+[POST] http://localhost:5000/apisite/presence/v1/presence/users - 2ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/premiumfeatures/v1/users/1/validate-membership - 0ms
+[PROXY] http://localhost:3185/_next/static/chunks/pages/home.js
+[PROXY] http://localhost:3185/_next/data/development/home.json
+[GET] http://localhost:5000/user-sponsorship/2 - 1ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends - 1ms
+[GET] http://localhost:5000/user-sponsorship/2 - 1ms
+[POST] http://localhost:5000/apisite/presence/v1/presence/users - 1ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar-headshot?userIds=1&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/games/v1/games/sorts?gameSortsContext=HomeSorts - 3ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/users/avatar?userIds=1%2C2&size=420x420&format=png - 0ms
+[GET] http://localhost:5000/apisite/thumbnails/v1/assets?assetIds=1&format=png&size=420x420 - 0ms
+[PROXY] http://localhost:3185/_next/static/chunks/pages/robux.aspx.js
+[PROXY] http://localhost:3185/robux.aspx
+[PROXY] http://localhost:3185/_next/static/chunks/webpack.js?ts=1787253316339
+[PROXY] http://localhost:3185/_next/static/chunks/main.js?ts=1787253316339
+[PROXY] http://localhost:3185/_next/static/chunks/react-refresh.js?ts=1787253316339
+[PROXY] http://localhost:3185/_next/static/chunks/pages/404.js?ts=1787253316339
+[PROXY] http://localhost:3185/_next/static/development/_ssgManifest.js?ts=1787253316339
+[PROXY] http://localhost:3185/_next/static/development/_buildManifest.js?ts=1787253316339
+[PROXY] http://localhost:3185/_next/static/development/_middlewareManifest.js?ts=1787253316339
+[PROXY] http://localhost:3185/_next/static/chunks/pages/_app.js?ts=1787253316339
+[PROXY] http://localhost:3185/img/navigation_02012016.svg
+[GET] http://localhost:5000/apisite/users/v1/users/authenticated - 0ms
+[GET] http://localhost:5000/apisite/privatemessages/v1/messages/unread/count - 0ms
+[GET] http://localhost:5000/apisite/economy/v1/users/1/currency - 2ms
+[GET] http://localhost:5000/apisite/friends/v1/user/friend-requests/count - 2ms
+[PROXY] http://localhost:3185/img/roblox_logo.svg
+[GET] http://localhost:5000/apisite/trades/v1/trades/inbound/count - 1ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[GET] http://localhost:5000/apisite/chat/v2/chat-settings - 0ms
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 0ms
+[GET] http://localhost:5000/apisite/friends/v1/users/1/friends - 0ms
+[PROXY] http://localhost:3185/_next/static/development/_devPagesManifest.json
+[PROXY] http://localhost:3185/_next/static/development/_devMiddlewareManifest.json
+[PROXY] http://localhost:3185/_next/static/chunks/pages/develop.js
+[GET] http://localhost:5000/apisite/groups/v1/users/1/groups/roles - 1ms
+[GET] http://localhost:5000/apisite/games/v2/users/1/games?cursor= - 0ms
+[GET] http://localhost:5000/apisite/groups/v1/groups/1/roles/4/permissions - 1ms
+[GET] http://localhost:5000/user-sponsorship/1 - 0ms
+[GET] http://localhost:5000/apisite/games/v2/groups/1/games?cursor= - 3ms
+[info] ws connection is in state Closed, so we are re-connecting
+[GET] http://localhost:5000/apisite/chat/v2/get-user-conversations?pageNumber=1&pageSize=100 - 2ms
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[info] ws connection is in state Closed, so we are re-connecting
+[UserSessions] 2026-08-20T19:15:31.9222774Z Cleaning up cache. len = 1
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:16:01.8336514Z Cleaning up cache. len = 1
+[UserSessions] 2026-08-20T19:16:01.9302585Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:16:31.9433760Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:17:01.8423786Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:17:01.9560735Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:17:31.9745943Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:18:01.8417509Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:18:01.9890333Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:18:31.9961812Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:19:01.8457967Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:19:02.0003333Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:19:32.0198186Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:20:01.8649022Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:20:02.0215378Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:20:32.0299015Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:21:01.8691219Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:21:02.0545223Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:21:32.0625254Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] there are 0 bad servers
+[info] ws connection is in state Closed, so we are re-connecting
+[UserSessions] 2026-08-20T19:22:01.8852694Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:22:02.0772465Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:22:32.0772228Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:23:01.9001088Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:23:02.0778453Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:23:32.0957394Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:24:01.9175943Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:24:02.1095623Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:24:32.1132795Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:25:01.9225731Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:25:02.1232830Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:25:32.1399996Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:26:01.9368836Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:26:02.1442950Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:26:32.1528488Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:27:01.9414879Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:27:02.1675352Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:27:32.1852734Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:28:01.9454361Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:28:02.2008523Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[info] ws connection is in state Closed, so we are re-connecting
+[UserSessions] 2026-08-20T19:28:32.2161743Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:29:01.9561119Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:29:02.2254614Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:29:32.2402755Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:30:01.9664454Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:30:02.2525027Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:30:32.2661721Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:31:01.9800933Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:31:02.2776193Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:31:32.2844173Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:32:01.9811978Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:32:02.3027611Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:32:32.3199418Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:33:01.9964549Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:33:02.3307474Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:33:32.3515425Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:34:02.0045688Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:34:02.3681863Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:34:32.3811647Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] there are 0 bad servers
+[info] ws connection is in state Closed, so we are re-connecting
+[UserSessions] 2026-08-20T19:35:02.0124661Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:35:02.3888575Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:35:32.4149266Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:36:02.0160314Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:36:02.4224533Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:36:32.4224620Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:37:02.0238339Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:37:02.4377566Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:37:32.4457256Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:38:02.0386259Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:38:02.4544370Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server

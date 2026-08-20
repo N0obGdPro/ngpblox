@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Sodium.Core</id>
+    <version>1.2.3</version>
+    <authors>tabrath</authors>
+    <owners>tabrath</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/tabrath/libsodium-core/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/tabrath/libsodium-core/</projectUrl>
+    <iconUrl>http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Salt_shaker_on_white_background.jpg/220px-Salt_shaker_on_white_background.jpg</iconUrl>
+    <description>libsodium for .net core</description>
+    <copyright>Copyright © tabrath 2019</copyright>
+    <tags>libsodium xamarin xamarin.ios xamarin.android</tags>
+    <repository type="git" url="https://github.com/tabrath/libsodium-core/" />
+    <dependencies>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="libsodium" version="1.0.18" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="libsodium" version="1.0.18" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="Xamarin.iOS1.0">
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="libsodium" version="1.0.18" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="libsodium" version="1.0.18" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+      <frameworkAssembly assemblyName="System.Drawing.Common.dll" targetFramework="Xamarin.iOS1.0" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

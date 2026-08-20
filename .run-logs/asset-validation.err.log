@@ -1,0 +1,16 @@
+go: downloading github.com/gofiber/fiber/v2 v2.36.0
+go: downloading github.com/robloxapi/rbxfile v0.6.3
+go: downloading github.com/anaminus/parse v0.2.0
+go: downloading github.com/bkaradzic/go-lz4 v1.0.0
+go: downloading golang.org/x/crypto v0.0.0-20220214200702-86341886e292
+go: downloading github.com/valyala/fasthttp v1.38.0
+go: downloading golang.org/x/sys v0.0.0-20220227234510-4e6760a101f9
+go: downloading github.com/andybalholm/brotli v1.0.4
+go: downloading github.com/klauspost/compress v1.15.0
+go: downloading github.com/valyala/bytebufferpool v1.0.0
+2026/08/20 19:40:59 validating item with size= 5304
+2026/08/20 19:40:59 item data &{[0x1eb34c960320] map[]} map[]
+2026/08/20 19:41:36 validating item with size= 5304
+2026/08/20 19:41:36 item data &{[0x1eb34c960500] map[]} map[]
+2026/08/20 19:52:49 validating item with size= 5042
+2026/08/20 19:52:49 item data &{[0x1eb34c960870] map[ExplicitAutoJoints:true]} map[]

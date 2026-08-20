@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>RestSharp</id>
+    <version>107.3.0</version>
+    <authors>John Sheehan, Andrew Young, Alexey Zimarev and RestSharp community</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>restsharp.png</icon>
+    <projectUrl>https://restsharp.dev/</projectUrl>
+    <description>Simple REST and HTTP API Client</description>
+    <repository type="git" url="https://github.com/restsharp/RestSharp.git" commit="fc27aef8305ec32ae73ccccc9afae266197b0ac6" />
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="System.Text.Json" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Text.Json" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

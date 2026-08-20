@@ -1,0 +1,34 @@
+<roblox version="4">
+  <Item class="DataModel" referent="RBX0">
+    <Properties>
+      <string name="Name">Starter Place</string>
+    </Properties>
+    <Item class="Workspace" referent="RBX1">
+      <Properties>
+        <string name="Name">Workspace</string>
+      </Properties>
+      <Item class="SpawnLocation" referent="RBX2">
+        <Properties>
+          <string name="Name">SpawnLocation</string>
+          <bool name="Anchored">true</bool>
+          <bool name="CanCollide">true</bool>
+          <CoordinateFrame name="CFrame">
+            <X>0</X><Y>5</Y><Z>0</Z>
+            <R00>1</R00><R01>0</R01><R02>0</R02>
+            <R10>0</R10><R11>1</R11><R12>0</R12>
+            <R20>0</R20><R21>0</R21><R22>1</R22>
+          </CoordinateFrame>
+          <Vector3 name="Size"><X>6</X><Y>1</Y><Z>6</Z></Vector3>
+        </Properties>
+      </Item>
+      <Item class="Part" referent="RBX3">
+        <Properties>
+          <string name="Name">Baseplate</string>
+          <bool name="Anchored">true</bool>
+          <bool name="CanCollide">true</bool>
+          <Vector3 name="Size"><X>512</X><Y>1</Y><Z>512</Z></Vector3>
+        </Properties>
+      </Item>
+    </Item>
+  </Item>
+</roblox>

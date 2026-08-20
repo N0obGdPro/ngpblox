@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>NodaTime.Serialization.JsonNet</id>
+    <version>3.0.0</version>
+    <authors>The Noda Time authors</authors>
+    <owners>The Noda Time authors</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <projectUrl>https://nodatime.org/</projectUrl>
+    <description>Provides serialization support between Noda Time and Json.NET.</description>
+    <tags>nodatime json jsonnet</tags>
+    <repository type="git" url="https://github.com/nodatime/nodatime" commit="43299d06f284f064f083bdf91ccbf4d95903df9f" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="12.0.1" exclude="Build,Analyzers" />
+        <dependency id="NodaTime" version="[3.0.0, 4.0.0)" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

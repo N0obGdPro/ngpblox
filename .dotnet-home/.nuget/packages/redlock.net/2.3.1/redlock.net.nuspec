@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>RedLock.net</id>
+    <version>2.3.1</version>
+    <title>RedLock.net</title>
+    <authors>Sam Cook</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>redlock-icon.png</icon>
+    <projectUrl>https://github.com/samcook/RedLock.net</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/samcook/RedLock.net/master/redlock-icon.png</iconUrl>
+    <description>An implementation of the Redlock distributed lock algorithm</description>
+    <releaseNotes>Note: RedLock 2.2.0+ requires StackExchange.Redis 2.0+ - if you need to use StackExchange.Redis 1.x please continue to use RedLock.net 2.1.0.
+
+			2.3.1 - Fix MissingMethodException on RedLockFactory.Create() in 2.3.0.
+			2.3.0 - Add support for async unlocking. Add configurable retry settings. Fix rare failure to unlock on dispose issue.
+			2.2.0 - Update to StackExchange.Redis 2.0. Switch to a single strong named package and adjust platform targets to match StackExchange.Redis 2.0.
+			2.1.0 - Add connection change events and more detailed lock status information
+			2.0.0 - .NET Core release</releaseNotes>
+    <copyright>Copyright 2021 Sam Cook</copyright>
+    <tags>RedLock Redis Distributed Lock</tags>
+    <repository type="git" url="https://github.com/samcook/RedLock.net" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="StackExchange.Redis" version="2.0.513" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="StackExchange.Redis" version="2.0.513" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="StackExchange.Redis" version="2.0.513" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.IO.Compression" targetFramework=".NETFramework4.7.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

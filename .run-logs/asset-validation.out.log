@@ -1,0 +1,16 @@
+
+ ┌───────────────────────────────────────────────────┐ 
+ │                   Fiber v2.36.0                   │ 
+ │               http://127.0.0.1:4300               │ 
+ │       (bound on host 0.0.0.0 and port 4300)       │ 
+ │                                                   │ 
+ │ Handlers ............. 4  Processes ........... 1 │ 
+ │ Prefork ....... Disabled  PID ............. 26736 │ 
+ └───────────────────────────────────────────────────┘ 
+
+[info] read warning: multiple errors:
+	#9 "PROP" chunk: unknown data type 0x21
+	#16 "PROP" chunk: unknown data type 0x21
+	#26 "PROP" chunk: unknown data type 0x21
+	#53 "PROP" chunk: unknown data type 0x21
+	#58 "PROP" chunk: type PhysicalProperties (0x19): #0: expected 21 bytes, got 1
