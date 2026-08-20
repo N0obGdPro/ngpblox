@@ -1224,3 +1224,66 @@ fail: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider[48]
 [info] ConnectionManager got error in ws connection Unable to connect to the remote server
 [info] ws connection is in state Closed, so we are re-connecting
 [info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:38:32.4632506Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[UserSessions] 2026-08-20T19:39:02.0392947Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:39:02.4760966Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:39:32.5176819Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:40:02.0541665Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:40:02.5213401Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:40:32.5351914Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] Roblox.Cache.DistributedCache: Removing 0 expired items
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[UserSessions] 2026-08-20T19:41:02.0591399Z Cleaning up cache. len = 0
+[UserSessions] 2026-08-20T19:41:02.5502099Z Cleaning up cache. len = 0
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] there are 0 bad servers
+[info] ws connection is in state Closed, so we are re-connecting
+[UserSessions] 2026-08-20T19:41:32.5685170Z Cleaning up cache. len = 0
+[info] ConnectionManager got error in ws connection Unable to connect to the remote server
+[info] ws connection is in state Closed, so we are re-connecting
