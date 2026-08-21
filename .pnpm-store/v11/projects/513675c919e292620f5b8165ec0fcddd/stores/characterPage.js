@@ -39,6 +39,8 @@ const CharacterCustomizationStore = createContainer(() => {
   useEffect(() => {
     if (!isRendering) return;
     setIsModified(false);
+    let polls = 0;
+    const maxPolls = 12;
     const timer = setInterval(() => {
       multiGetUserThumbnails({
         userIds: [userId],
@@ -47,6 +49,18 @@ const CharacterCustomizationStore = createContainer(() => {
         if (user.state === 'Completed' && typeof user.imageUrl === 'string') {
           setIsRendering(false);
           setThumbnail(user.imageUrl);
+          clearInterval(timer);
+        } else if (++polls >= maxPolls) {
+          // The local render service is optional. Stop the UI from displaying
+          // "Loading..." forever when it is not running.
+          setIsRendering(false);
+          setThumbnail('/img/placeholder.png');
+          clearInterval(timer);
+        }
+      }).catch(() => {
+        if (++polls >= maxPolls) {
+          setIsRendering(false);
+          setThumbnail('/img/placeholder.png');
           clearInterval(timer);
         }
       });

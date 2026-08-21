@@ -6,6 +6,10 @@ const getKey = (id, type, size) => {
   return type + '_' + id + '_' + size;
 }
 
+// A renderer can be unavailable on a local installation. Do not leave every
+// image request in a permanent polling loop when that happens.
+const MAX_PENDING_RETRIES = 5;
+
 const thumbnailReducer = (prev, action) => {
   let newData = {...prev};
   if (action.event === 'MULTI_ADD') {
@@ -27,6 +31,7 @@ const ThumbnailStore = createContainer(() => {
     pendingItems: [],
   });
   const retryTimers = useRef({});
+  const retryAttempts = useRef({});
 
   const scheduleRetry = (id, type, size) => {
     const key = getKey(id, type, size);
@@ -75,8 +80,17 @@ const ThumbnailStore = createContainer(() => {
             pendingState.current.pendingItems = pendingState.current.pendingItems.filter(v => v !== key);
             const item = returned.get(String(requested.id));
             if (!item || item.state === 'Pending' || !item.imageUrl) {
-              scheduleRetry(requested.id, type, '420x420');
+              const attempts = retryAttempts.current[key] || 0;
+              if (attempts >= MAX_PENDING_RETRIES) {
+                // Cache an unavailable item as null so callers use the normal
+                // placeholder and do not continuously request it.
+                ready.push({ targetId: requested.id, imageUrl: null });
+              } else {
+                retryAttempts.current[key] = attempts + 1;
+                scheduleRetry(requested.id, type, '420x420');
+              }
             } else {
+              delete retryAttempts.current[key];
               ready.push(item);
             }
           }

@@ -15,17 +15,22 @@ namespace Roblox.Website.Controllers;
 public class UsersControllerV1 : ControllerBase
 {
     [HttpGet("users/authenticated")]
-    public async Task<dynamic> GetMySession()
+    public async Task<IActionResult> GetMySession()
     {
-        if (userSession is null) throw new UnauthorizedException();
+        // This endpoint is queried while the frontend determines whether the
+        // visitor is signed in.  A visitor without a session is expected, not
+        // an application error. Throwing here made ASP.NET's exception handler
+        // turn a normal signed-out response into a 500 (and could also trigger
+        // a Windows Event Log permission error in local development).
+        if (userSession is null) return Unauthorized();
         var userInfo = await services.users.GetUserById(userSession.userId);
-        return new
+        return Ok(new
         {
             id = userSession.userId,
             name = userSession.username,
             displayName = userSession.username,
             isAdmin = userInfo.isAdmin || StaffFilter.IsOwner(userSession.userId),
-        };
+        });
     }
 
     [HttpGet("users/{userId:long}")]
