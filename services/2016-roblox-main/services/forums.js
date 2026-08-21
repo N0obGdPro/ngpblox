@@ -52,13 +52,13 @@ export const getPostsByUser = ({userId, offset, limit}) => {
 const ForumsCategories = [
   {
     id: 1,
-    name: 'ROBLOX',
+    name: 'NGPBLOX',
     subCategories: [
       {
         id: 46,
-        name: 'All Things ROBLOX',
+        name: 'All Things NGPBLOX',
         description:
-          'The area for discussions purely about ROBLOX – the features, the games, and company news.',
+          'The area for discussions purely about NGPBLOX – the features, the games, and company news.',
       },
       {
         id: 14,
@@ -70,13 +70,13 @@ const ForumsCategories = [
         id: 21,
         name: 'Suggestions & Ideas',
         description:
-          'Do you have a suggestion and ideas for ROBLOX? Share your feedback here.',
+          'Do you have a suggestion and ideas for NGPBLOX? Share your feedback here.',
       },
       {
         id: 54,
-        name: 'BLOXFaires & ROBLOX events',
+        name: 'BLOXFaires & NGPBLOX events',
         description:
-          'Check here to see the crazy things ROBLOX is doing. Contest information can be found here. ROBLOX is going to be at various Maker Faires and conferences around the globe. Discuss those events here!',
+          'Check here to see the crazy things NGPBLOX is doing. Contest information can be found here. NGPBLOX is going to be at various Maker Faires and conferences around the globe. Discuss those events here!',
       },
     ],
   },
@@ -86,7 +86,7 @@ const ForumsCategories = [
     subCategories: [
       {
         id: 13,
-        name: 'ROBLOX Talk',
+        name: 'NGPBLOX Talk',
         description:
           'A popular hangout where ROBLOXians talk about various topics.',
       },
@@ -106,7 +106,7 @@ const ForumsCategories = [
         id: 35,
         name: `Let's Make a Deal`,
         description:
-          'A fast paced community dedicated to mastering the Limited Trades and Sales market, and divining the subtleties of the ROBLOX Currency Exchange.',
+          'A fast paced community dedicated to mastering the Limited Trades and Sales market, and divining the subtleties of the NGPBLOX Currency Exchange.',
       },
     ],
   },

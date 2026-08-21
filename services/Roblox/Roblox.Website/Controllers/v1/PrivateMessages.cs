@@ -23,8 +23,8 @@ public class PrivateMessagesControllerV1 : ControllerBase
             sender = new
             {
                 id = 1,
-                name = "ROBLOX",
-                displayName = "ROBLOX",
+                name = "NGPBLOX",
+                displayName = "NGPBLOX",
             },
             subject = "Welcome to our site!",
             body = "Body here",

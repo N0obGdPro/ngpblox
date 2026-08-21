@@ -45,7 +45,7 @@ const PlayButton = props => {
       window.location.href = '/RobloxApp/Play?placeId=' + props.placeId;
     }else{
       // TODO: Roblox URI handling here (is this even possible?)
-      alert('Support for joining ROBLOX games is not implemented. You will be redirected to ROBLOX to play this game.');
+      alert('Support for joining NGPBLOX games is not implemented. You will be redirected to NGPBLOX to play this game.');
       window.location.href = 'https://www.roblox.com/games/' + props.placeId + '/--';
     }
   }

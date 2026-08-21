@@ -104,7 +104,7 @@ public class CatalogControllerV1 : ControllerBase
             defaultSortAggregation = 5,
             categoriesWithCreator = new List<int>() { 1, 3, 13},
             robloxUserId = 1,
-            robloxUserName = "ROBLOX",
+            robloxUserName = "NGPBLOX",
             gearSubcategory = 5,
             allCategories = 1,
             freeFilter = 5,

@@ -1509,6 +1509,10 @@ public class GroupsService : ServiceBase, IService
                 group_role_id = ownerId,
             });
 
+            // Every group needs a balance record even before it receives its
+            // first payout. Without this, the owner group page returns 500.
+            await ec.CreateGroupBalanceIfRequired(groupId);
+
             return new GroupCreationResponse()
             {
                 id = groupId,

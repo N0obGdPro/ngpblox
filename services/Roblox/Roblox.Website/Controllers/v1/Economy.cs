@@ -311,7 +311,10 @@ public class EconomyControllerV1 : ControllerBase
                 GroupPermission.SpendGroupFunds);
         if (!canViewFunds)
             throw new RobloxException(401, 0, "Unauthorized");
-        
+
+        // Older groups may predate group_economy. Repair the zero-balance row
+        // on first access rather than failing the entire group page.
+        await services.economy.CreateGroupBalanceIfRequired(groupId);
         return await services.economy.GetBalance(CreatorType.Group, groupId);
     }
     

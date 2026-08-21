@@ -56,19 +56,14 @@ public class EconomyService : ServiceBase, IService
 
     public async Task CreateGroupBalanceIfRequired(long groupId)
     {
-        var exists = await db.QuerySingleOrDefaultAsync<Dto.Total>(
-            "SELECT COUNT(*) as total FROM group_economy WHERE group_id = :group_id", new
+        // Group economy rows were missing for groups created by older builds.
+        // This is safe to call for both new and existing groups.
+        await db.ExecuteAsync(
+            "INSERT INTO group_economy (group_id, balance_robux, balance_tickets) " +
+            "VALUES (:group_id, 0, 0) ON CONFLICT (group_id) DO NOTHING", new
             {
                 group_id = groupId,
             });
-        if (exists.total == 0)
-        {
-            await db.ExecuteAsync(
-                "INSERT INTO group_economy (group_id, balance_robux, balance_tickets) VALUES (:group_id, 0, 0)", new
-                {
-                    group_id = groupId,
-                });
-        }
     }
     
     private async Task<UserEconomy> GetGroupBalance(long groupId)
