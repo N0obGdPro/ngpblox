@@ -14,8 +14,30 @@
         <div class="col-12 col-md-6 offset-md-3">
             <div class="card card-body">
                 <h3>Discord</h3>
-                <p>We <span class="fw-bold">do not have an official discord server</span> or any other off-platform presence. Any discord servers claiming to be related to this website are not officially affilated or supported by us.</p>
+
+                <p>
+                    Join our official Discord server to chat with the community,
+                    get updates, and stay connected.
+                </p>
+
+                <button id="discordButton" class="btn btn-primary">
+                    Join Discord
+                </button>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const discordButton = document.getElementById("discordButton");
+
+        discordButton.addEventListener("click", function () {
+            window.open(
+                "https://discord.gg/wHtGsbE9nk",
+                "_blank",
+                "noopener,noreferrer"
+            );
+        });
+    });
+</script>

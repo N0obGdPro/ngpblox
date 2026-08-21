@@ -96,43 +96,73 @@ const LoggedInArea = props => {
   const [settingsOpen, setSettingsOpen] = useState(false);
 
   if (authStore.robux === null || authStore.tix === null) return null;
-  return <div className={`${s.linkContainerCol} `}>
-    <div className='row'>
-      <div className={`col-12 ${s.linkContainer}`}>
-        <p className={s.text} title={authStore.robux.toLocaleString()}>
-          <Link href='/My/Money.aspx'>
-            <a>
-              <span className='icon-nav-robux'/>
+
+  return (
+    <div className={`${s.linkContainerCol}`}>
+      <div className='row'>
+        <div className={`col-12 ${s.linkContainer}`}>
+
+          {/* Robux icon */}
+          <p
+            className={s.text}
+            title={authStore.robux.toLocaleString()}
+          >
+            <Link href='/My/Money.aspx'>
+              <a>
+                <span className='icon-nav-robux' />
+              </a>
+            </Link>
+          </p>
+
+          {/* Robux balance */}
+          <p
+            className={`${s.text} ${s.robuxText}`}
+            title={authStore.robux.toLocaleString()}
+          >
+            <span>
+              {abbreviateNumber(authStore.robux)}
+            </span>
+          </p>
+
+          {/* Tix icon */}
+          <p
+            className={s.text}
+            title={authStore.tix.toLocaleString()}
+          >
+            <Link href='/My/Money.aspx'>
+              <a>
+                <span className='icon-nav-tix' />
+              </a>
+            </Link>
+          </p>
+
+          {/* Tix balance */}
+          <p className={`${s.text} ${s.robuxText}`}>
+            <span title={authStore.tix.toLocaleString()}>
+              {abbreviateNumber(authStore.tix)}
+            </span>
+          </p>
+
+          {/* Settings */}
+          <p className={s.text}>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                setSettingsOpen(!settingsOpen);
+              }}
+            >
+              <span
+                className={`icon-nav-settings ${s.settingsIcon}`}
+                id='nav-settings'
+              />
             </a>
-          </Link>
-        </p>
-        <p className={s.text + ' ' + s.robuxText} title={authStore.robux.toLocaleString()}>
-          <span>{abbreviateNumber(authStore.robux)}</span>
-        </p>
-        {getFlag('showTicketBalace', false) ? <>
-        <p className={s.text} title={authStore.tix.toLocaleString()}>
-          <Link href='/My/Money.aspx'>
-            <a>
-              <span className='icon-nav-tix'/>
-            </a>
-          </Link>
-        </p>
-        <p className={s.text + ' ' + s.robuxText}>
-          <span title={authStore.tix.toLocaleString()}>{abbreviateNumber(authStore.tix)}</span>
-        </p>
-        </> : null}
-        <p className={s.text}>
-          <a onClick={(e) => {
-            e.preventDefault();
-            setSettingsOpen(!settingsOpen);
-          }}>
-            <span className={`icon-nav-settings ${s.settingsIcon}`} id="nav-settings"/>
-          </a>
-        </p>
-        {settingsOpen && <SettingsDropdown/>}
+          </p>
+
+          {settingsOpen && <SettingsDropdown />}
+        </div>
       </div>
     </div>
-  </div>
-}
+  );
+};
 
 export default LoggedInArea;

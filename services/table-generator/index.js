@@ -19,7 +19,7 @@ const main = async () => {
         entries.push(`<tr>
         <th scope="row">${app['Auto ID']}</th>
         <td>${xss(app['Role'])}</td>
-        <td><a target="_blank" href="https://example.com/search/users?keyword=${encodeURI(app['Username'])}">${xss(app['Username'])}</a></td>
+        <td><a target="_blank" href="https://ngpblox.noobgdpro.workers.dev/search/users?keyword=${encodeURI(app['Username'])}">${xss(app['Username'])}</a></td>
         <td>${xss(app['Discord'])}</td>
         <td>${xss(app['About'], {
             allowList: {},

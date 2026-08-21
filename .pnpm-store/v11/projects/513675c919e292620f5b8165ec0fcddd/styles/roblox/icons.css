@@ -11,6 +11,7 @@
 .icon-nav-robux,
 .icon-nav-tix,
 .icon-nav-settings,
+.icon-nav-admin,
 .icon-nav-search,
 .icon-nav-home,
 .icon-nav-profile,
@@ -268,6 +269,19 @@ a:hover .icon-nav-search-white {
 button:hover .icon-nav-shop,
 a:hover .icon-nav-shop {
 	background-position: -28px -448px;
+}
+
+.icon-nav-admin {
+	background-position: 0 -476px;
+}
+
+.icon-nav-admin:hover {
+	background-position: -28px -476px;
+}
+
+button:hover .icon-nav-admin,
+a:hover .icon-nav-admin {
+	background-position: -28px -476px;
 }
 
 .icon-default-generic,
@@ -1231,23 +1245,23 @@ a:hover .icon-thumbs-down {
 }
 
 .icon-welcome-to-the-club {
-	background-position: -140px -140px;
+	background-position: 0px -140px;
 }
 
 .icon-ambassador {
-	background-position: 0 -420px;
+	background-position: -140px -140px;
 }
 
 .icon-combat-initiation {
-	background-position: -140px -420px;
+	background-position: 0px -280px;
 }
 
 .icon-warrior {
-	background-position: 0 -560px;
+	background-position: -140px -280px;
 }
 
 .icon-bloxxer {
-	background-position: -140px -560px;
+	background-position: 0px -420px;
 }
 
 .icon-homestead {
@@ -1298,7 +1312,7 @@ a:hover .icon-thumbs-down {
 }
 
 .icon-veteran {
-	background-position: 0 -1680px;
+	background-position: 0 -980px;
 }
 
 .icon-line-chart {

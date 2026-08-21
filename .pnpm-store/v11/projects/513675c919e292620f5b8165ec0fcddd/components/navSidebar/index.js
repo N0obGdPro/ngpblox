@@ -84,7 +84,7 @@ const NavSideBar = props => {
       <LinkEntry name='Groups' url='/My/Groups.aspx' icon='icon-nav-group' />
       <LinkEntry name='Forums' url='/Forum/Default.aspx' icon='icon-nav-forum' />
       <LinkEntry name='Blog' url='/info/blog' icon='icon-nav-blog' />
-      {authStore.isAdmin && <LinkEntry name='Admin' url='/admin/' icon='icon-nav-settings' />}
+      {authStore.isAdmin && <LinkEntry name='Admin' url='/admin/' icon='icon-nav-admin' />}
       <a href='/BuildersClub/Upgrade.ashx'><p className={s.upgradeNowButton}>Upgrade Now</p></a>
     </div>
   </div>

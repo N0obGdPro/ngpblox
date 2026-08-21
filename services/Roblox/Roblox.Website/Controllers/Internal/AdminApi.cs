@@ -246,8 +246,8 @@ public class AdminApiController : ControllerBase
         if (request.url != null)
         {
             var url = new Uri(request.url);
-            if (!url.Host.EndsWith(".example.com") && url.Host != "example.com")
-                throw new StaffException("All URLs must link to example.com. Base was " + url.Host);
+            if (!url.Host.EndsWith(".ngpblox.noobgdpro.workers.dev") && url.Host != "ngpblox.noobgdpro.workers.dev")
+                throw new StaffException("All URLs must link to ngpblox.noobgdpro.workers.dev. Base was " + url.Host);
         }
         Writer.Info(LogGroup.AbuseDetection, "User {0} is setting alert to '{1}'", userSession.userId, request.text);
         await services.users.SetGlobalAlert(request.text, request.url);

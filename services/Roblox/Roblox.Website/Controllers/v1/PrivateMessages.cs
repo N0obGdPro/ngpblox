@@ -23,13 +23,13 @@ public class PrivateMessagesControllerV1 : ControllerBase
             sender = new
             {
                 id = 1,
-                name = "NGPBLOX",
-                displayName = "NGPBLOX",
+                name = "NoobGdPro",
+                displayName = "NoobGdPro",
             },
             subject = "Welcome to our site!",
-            body = "Body here",
-            created = "2021-01-13T12:00:00.42Z",
-            updated = "2021-01-13T12:00:00.42Z",
+            body = "Thank you for joining our site!",
+            created = "2016-01-13T12:00:00.42Z",
+            updated = "2016-01-13T12:00:00.42Z",
         }
     };
     [HttpGet("announcements/metadata")]

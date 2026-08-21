@@ -3,10 +3,10 @@ import NavigationStore from "../../../stores/navigation";
 
 const useLogoStyles = createUseStyles({
   imgDesktop: {
-    width: '118px',
+    width: '127px',
     height: '30px',
     backgroundImage: `url(/img/roblox_logo.svg)`,
-    backgroundSize: '118px 30px',
+    backgroundSize: '127px 30px',
     display: 'none',
     '@media(min-width: 1301px)': {
       display: 'block',

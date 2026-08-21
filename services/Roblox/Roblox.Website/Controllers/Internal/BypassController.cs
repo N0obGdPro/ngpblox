@@ -1038,7 +1038,7 @@ namespace Roblox.Website.Controllers
                 about = "Integration test",
                 socialPresence = "",
                 isVerified = true,
-                verifiedUrl = "https://example.com/",
+                verifiedUrl = "https://ngpblox.noobgdpro.workers.dev/",
                 verificationPhrase = "Integration test",
                 verifiedId = "1",
             });

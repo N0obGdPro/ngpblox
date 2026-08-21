@@ -148,6 +148,7 @@ const ProfileHeader = props => {
     // 2 = TBC
     // 3 = OBC
     // 4 = Premium
+    // 5 = EBC
     // 0 = None
     switch(bcLevel) {
       case 1:
@@ -157,6 +158,8 @@ const ProfileHeader = props => {
         return <span className="icon-tbc" />
       case 3:
         return <span className="icon-obc" />
+      case 5:
+        return <span className="icon-ebc" />
       default:
         return null;
     }
